@@ -507,22 +507,28 @@ section .container {
   background: rgba(255, 255, 255, 0.12);
 }
 
-
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+.education .section-title {
+  margin-bottom: 40px;
+}
+
 .education .education-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #333;
 }
 
 .education .education-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -538,7 +544,7 @@ section .container {
 
 .education .education-item h5 {
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(24, 210, 110, 0.1);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -569,17 +575,41 @@ section .container {
   border: 2px solid #18d26e;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
+.education img {
+  max-width: 100%;
+  height: auto;
+}
+
+.education .coding-platforms img,
+.education .certifications img {
+  /* max-width: 100px; */
+  margin: 5px; /* Reduced margin for coding platform logos */
+}
+
+.coding-platforms {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.certifications {
+  margin-top: 20px;
+}
+
+.education .logo-center {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.certifications .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box .icon {
+.certifications .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -593,12 +623,12 @@ section .container {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
+.certifications .icon-box .icon i {
   color: #fff;
   font-size: 28px;
 }
 
-.services .icon-box .icon::before {
+.certifications .icon-box .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -611,43 +641,139 @@ section .container {
   transform: translateZ(-1px);
 }
 
-.services .icon-box h4 {
+.certifications .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.certifications .icon-box h4 a {
   color: #fff;
 }
 
-.services .icon-box p {
+.certifications .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.certifications .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
 }
 
-.services .icon-box:hover .icon {
+.certifications .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.certifications .icon-box:hover .icon i {
   color: #18d26e;
 }
 
-.services .icon-box:hover .icon::before {
+.certifications .icon-box:hover .icon::before {
   background: #35e888;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.certifications .icon-box:hover h4 a,
+.certifications .icon-box:hover p {
   color: #fff;
 }
+
+button {
+  background-color: #35e888;
+  border-radius: 5px;
+  margin: 5px;
+}
+button:hover {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px rgb(245, 243, 243);
+}
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more button{
+  width: 200px;
+  height: 40px;
+  margin: 30px;
+  background: #35e888;
+}
+
+/*--------------------------------------------------------------
+# Experiences
+--------------------------------------------------------------*/
+/* Icon Styling */
+.icon img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.experiences .logo-center {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+/* Title Styling */
+.exp .company-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Position Styling */
+.exp .experience-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Company Name Styling */
+.exp .experience-item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Duration Styling */
+.exp .experience-item h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Description Styling */
+.exp .experience-item .description {
+  font-size: 14px;
+  color: #666;
+}
+
+.experiences .row:hover {
+  background: #18d26e;
+  border-color: #18d26e;
+}
+
+.experiences .row:hover .icon {
+  background: #fff;
+}
+
+.experiences .row:hover .icon i {
+  color: #18d26e;
+}
+
+.experiences .row:hover .icon::before {
+  background: #35e888;
+}
+
+.experiences .row:hover h4 a,
+.experiences .row:hover p {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -885,6 +1011,11 @@ section .container {
 .contact {
   text-align: center; /* Center text content */
   align-items: center;
+}
+
+.contact .row {
+  display: flex;
+  justify-content: center;
 }
 
 .contact .info-box {
