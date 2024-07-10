@@ -438,7 +438,7 @@ section .container {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image covers the circle properly */
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
@@ -507,9 +507,6 @@ section .container {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/*--------------------------------------------------------------
-# Education
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
@@ -712,7 +709,27 @@ button:hover {
 .experiences .logo-center {
   display: flex;
   justify-content: center;
-  padding: 80px;
+  align-items: center;
+  /* padding: 80px; */
+}
+
+.experiences .img-fluid{
+  width: 170px;
+  height: 130px;
+  padding: 2px;
+  background-color: black;
+  object-fit: cover;
+}
+
+.experiences .logo-center a {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.241);
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
 }
 
 /* Title Styling */
@@ -753,7 +770,7 @@ button:hover {
 }
 
 .experiences .row:hover {
-  background: #18d26e;
+  background: rgba(255, 255, 255, 0.08);
   border-color: #18d26e;
 }
 
