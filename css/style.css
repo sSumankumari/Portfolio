@@ -680,12 +680,12 @@ section .container {
 }
 
 button {
-  background-color: #35e888;
+  background-color: #18d26e;
+  color: white;
   border-radius: 5px;
   margin: 5px;
 }
 button:hover {
-  background-color: whitesmoke;
   box-shadow: 2px 2px rgb(245, 243, 243);
 }
 .more {
@@ -697,7 +697,7 @@ button:hover {
   width: 200px;
   height: 40px;
   margin: 30px;
-  background: #35e888;
+  background: #18d26e;
 }
 
 /*--------------------------------------------------------------
@@ -1078,3 +1078,21 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #f1f1f1;
+}
+
