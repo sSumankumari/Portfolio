@@ -18,6 +18,17 @@ body::before {
   right: 0;
   top: 0;
   height: 100vh;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  background: rgba(10, 10, 10, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -434,9 +445,15 @@ section .container {
   margin-bottom: 0;
 }
 
+.about-me .myimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .circular-image {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -580,7 +597,7 @@ section .container {
 .education .coding-platforms img,
 .education .certifications img {
   /* max-width: 100px; */
-  margin: 5px; /* Reduced margin for coding platform logos */
+  margin: 5px;
 }
 
 .coding-platforms {
@@ -602,7 +619,7 @@ section .container {
 .certifications .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
+  padding: 60px 20px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -706,6 +723,11 @@ button:hover {
   margin: 0 auto 10px;
 }
 
+.experiences .exp-container {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
 .experiences .logo-center {
   display: flex;
   justify-content: center;
@@ -770,7 +792,7 @@ button:hover {
 }
 
 .experiences .row:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #2c2c2c;
   border-color: #18d26e;
 }
 
