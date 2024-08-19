@@ -38,6 +38,7 @@ body::after {
   }
 }
 
+/* Text styling */
 a {
   color: #18d26e;
   text-decoration: none;
