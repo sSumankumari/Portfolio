@@ -1009,11 +1009,6 @@ button:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  /* text-align: center; */
-  align-items: center;
-}
-
 .contact .row {
   display: flex;
   justify-content: center;
