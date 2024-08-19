@@ -531,13 +531,13 @@ section .container {
   margin-bottom: 40px;
 }
 
-.education .education-title {
+/* .education .education-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #333;
-}
+} */
 
 .education .education-item {
   padding: 0 0 20px 20px;
@@ -594,6 +594,20 @@ section .container {
   height: auto;
 }
 
+.education .img-fluid{
+  max-width: 100%;
+  height: auto;
+  height: 230px;
+  width: 200px;
+}
+
+.education .logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
 .education .coding-platforms img,
 .education .certifications img {
   /* max-width: 100px; */
@@ -607,13 +621,7 @@ section .container {
 }
 
 .certifications {
-  margin-top: 20px;
-}
-
-.education .logo-center {
-  display: flex;
-  justify-content: center;
-  padding: 80px;
+  margin-top: 10px;
 }
 
 .certifications .icon-box {
@@ -1001,7 +1009,7 @@ button:hover {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  text-align: center; /* Center text content */
+  /* text-align: center; */
   align-items: center;
 }
 
