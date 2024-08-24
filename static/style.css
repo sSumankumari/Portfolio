@@ -705,7 +705,7 @@ section .container {
 button {
   background-color: #18d26e;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   margin: 5px;
 }
 button:hover {
