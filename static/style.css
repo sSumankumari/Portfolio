@@ -802,7 +802,7 @@ button:hover {
 
 .experiences .row:hover {
   background: #2c2c2c;
-  border-color: #18d26e;
+  box-shadow: 0 6px 12px rgba(97, 97, 97, 0.4);
 }
 
 .experiences .row:hover .icon {
@@ -836,14 +836,17 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-
+.experiences .exp-container {
+  
+}
 .portfolio .portfolio-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: #2c2c2c;
+  /* background: #2c2c2c; */
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -860,6 +863,14 @@ button:hover {
   position: relative;
   padding-bottom: 5px;
   border-bottom: 2px solid #18d26e;
+}
+
+/* Duration Styling */
+.portfolio-info h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .portfolio .portfolio-info p {
@@ -888,8 +899,8 @@ button:hover {
 }
 
 .portfolio .portfolio-wrap:hover {
-  background: #3d3d3d; /* Slightly lighter grey on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Brighter box shadow on hover */
+  background: #2c2c2c;
+  box-shadow: 0 6px 12px rgba(97, 97, 97, 0.4);
 }
 
 /* Style for filters */
