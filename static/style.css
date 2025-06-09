@@ -94,14 +94,13 @@ h6 {
 
 #header h2 {
   font-size: 24px;
-  margin-top: 20px;
+  margin: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
-  padding-bottom: 6px;
+  border-bottom: 2.5px solid #18d26e;
 }
 
 #header img {
@@ -453,8 +452,8 @@ section .container {
 }
 
 .circular-image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -836,9 +835,9 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-.experiences .exp-container {
+/* .experiences .exp-container {
   
-}
+} */
 .portfolio .portfolio-wrap {
   display: flex;
   flex-direction: column;
